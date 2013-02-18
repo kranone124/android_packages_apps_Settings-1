@@ -216,6 +216,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
     private static final String FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES = "force_authorize_substratum_packages";
 
+    private static final String ADVANCED_REBOOT_KEY = "advanced_reboot";
+
     private static final int RESULT_DEBUG_APP = 1000;
     private static final int RESULT_MOCK_LOCATION_APP = 1001;
 
@@ -307,6 +309,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private SwitchPreference mShowAllANRs;
 
     private ColorModePreference mColorModePreference;
+    private SwitchPreference mAdvancedReboot;
 
     private SwitchPreference mForceResizable;
 
@@ -397,6 +400,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mForceAllowOnExternal = findAndInitSwitchPref(FORCE_ALLOW_ON_EXTERNAL_KEY);
         mPassword = (PreferenceScreen) findPreference(LOCAL_BACKUP_PASSWORD);
         mAllPrefs.add(mPassword);
+        mAdvancedReboot = findAndInitSwitchPref(ADVANCED_REBOOT_KEY);
         mForceAuthorizeSubstratumPackages = findAndInitSwitchPref(FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES);
 
         if (!mUm.isAdminUser()) {
@@ -404,6 +408,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             disableForUser(mClearAdbKeys);
             disableForUser(mEnableTerminal);
             disableForUser(mPassword);
+            disableForUser(mAdvancedReboot);
             disableForUser(mForceAuthorizeSubstratumPackages);
         }
 
@@ -733,6 +738,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             updateColorTemperature();
         }
         updateBluetoothDisableAbsVolumeOptions();
+        updateAdvancedRebootOptions();
         updateForceAuthorizeSubstratumPackagesOptions();
     }
 
@@ -747,6 +753,22 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                 Settings.Secure.FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES, 0) != 0);
     }
 
+    private void resetAdvancedRebootOptions() {
+        Settings.Secure.putInt(getActivity().getContentResolver(),
+                Settings.Secure.ADVANCED_REBOOT, 0);
+    }
+
+    private void writeAdvancedRebootOptions() {
+        Settings.Secure.putInt(getActivity().getContentResolver(),
+                Settings.Secure.ADVANCED_REBOOT,
+                mAdvancedReboot.isChecked() ? 1 : 0);
+    }
+
+    private void updateAdvancedRebootOptions() {
+        mAdvancedReboot.setChecked(Settings.Secure.getInt(getActivity().getContentResolver(),
+                Settings.Secure.ADVANCED_REBOOT, 0) != 0);
+    }
+
     private void resetDangerousOptions() {
         mDontPokeProperties = true;
         for (int i=0; i< mResetSwitchPrefs.size(); i++) {
@@ -759,6 +781,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         resetDebuggerOptions();
         writeLogpersistOption(null, true);
         writeLogdSizeOption(null);
+        resetAdvancedRebootOptions();
         writeAnimationScaleOption(0, mWindowAnimationScale, null);
         writeAnimationScaleOption(1, mTransitionAnimationScale, null);
         writeAnimationScaleOption(2, mAnimatorDurationScale, null);
@@ -2052,6 +2075,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             writeUSBAudioOptions();
         } else if (preference == mForceResizable) {
             writeForceResizableOptions();
+        } else if (preference == mAdvancedReboot) {
+            writeAdvancedRebootOptions();
         } else if (preference == mForceAuthorizeSubstratumPackages) {
             writeForceAuthorizeSubstratumPackagesOptions();
         } else if (INACTIVE_APPS_KEY.equals(preference.getKey())) {
