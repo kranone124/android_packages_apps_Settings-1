@@ -86,6 +86,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
     private static final String KEY_WIFI_DISPLAY = "wifi_display";
     private static final String KEY_ZEN_MODE = "zen_mode";
     private static final String KEY_CELL_BROADCAST_SETTINGS = "cell_broadcast_settings";
+    private static final String KEY_VOLBTN_MUSIC_CONTROLS = "volbtn_music_controls";
 
     private static final String SELECTED_PREFERENCE_KEY = "selected_preference";
     private static final int REQUEST_CODE = 200;
@@ -117,6 +118,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
     private Preference mNotificationRingtonePreference;
     private Preference mAlarmRingtonePreference;
     private TwoStatePreference mVibrateWhenRinging;
+    private TwoStatePreference mVlbtnMusicControl;
     private ComponentName mSuppressor;
     private int mRingerMode = -1;
     private TwoStatePreference mVolumeLinkNotification;
@@ -183,6 +185,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
             removePreference(KEY_CELL_BROADCAST_SETTINGS);
         }
         initRingtones();
+        initVolumeButtonMusicControl();
         initVibrateWhenRinging();
         initVolumeLinkNotification();
         updateRingerMode();
@@ -497,6 +500,25 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
         return summary;
     }
 
+    private void initVolumeButtonMusicControl() {
+        mVlbtnMusicControl = (TwoStatePreference) getPreferenceScreen().findPreference(
+                KEY_VOLBTN_MUSIC_CONTROLS);
+        if (mVlbtnMusicControl == null) {
+            Log.i(TAG, "Preference not found: " + KEY_VOLBTN_MUSIC_CONTROLS);
+            return;
+        }
+        mVlbtnMusicControl.setPersistent(false);
+        updateVolumeButtonMusicControl();
+        mVlbtnMusicControl.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                final boolean val = (Boolean) newValue;
+                return Settings.System.putInt(getContentResolver(),
+                        Settings.System.VOLBTN_MUSIC_CONTROLS, val ? 1 : 0);
+            }
+        });
+    }
+
     // === Vibrate when ringing ===
 
     private void initVibrateWhenRinging() {
@@ -522,6 +544,12 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
                         val ? 1 : 0);
             }
         });
+    }
+
+    private void updateVolumeButtonMusicControl() {
+        if (mVlbtnMusicControl == null) return;
+        mVlbtnMusicControl.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.VOLBTN_MUSIC_CONTROLS, 1) != 0);
     }
 
     private void updateVibrateWhenRinging() {
@@ -581,6 +609,8 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
     private final class SettingsObserver extends ContentObserver {
         private final Uri VIBRATE_WHEN_RINGING_URI =
                 Settings.System.getUriFor(Settings.System.VIBRATE_WHEN_RINGING);
+        private final Uri VOLBTN_MUSIC_CONTROLS_URI =
+                Settings.System.getUriFor(Settings.System.VOLBTN_MUSIC_CONTROLS);
 
         public SettingsObserver() {
             super(mHandler);
@@ -600,6 +630,8 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
             super.onChange(selfChange, uri);
             if (VIBRATE_WHEN_RINGING_URI.equals(uri)) {
                 updateVibrateWhenRinging();
+            } else if (VOLBTN_MUSIC_CONTROLS_URI.equals(uri)) {
+                updateVolumeButtonMusicControl();
             }
         }
     }
