@@ -41,6 +41,7 @@ import android.support.v7.preference.PreferenceScreen;
 import android.telecom.PhoneAccount;
 import android.support.v7.preference.PreferenceManager;
 import android.support.v7.preference.PreferenceViewHolder;
+import android.telecom.PhoneAccount;
 import android.telecom.PhoneAccountHandle;
 import android.telecom.TelecomManager;
 import android.telephony.PhoneNumberUtils;
