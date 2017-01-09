@@ -90,6 +90,10 @@
                 android:key="doze"
                 android:title="@string/doze_title"
                 android:summary="@string/doze_summary" />
+              
+        <SwitchPreference
+                android:key="srgb"
+                android:title="@string/srgb_title" />
 
         <SwitchPreference
                 android:key="tap_to_wake"
