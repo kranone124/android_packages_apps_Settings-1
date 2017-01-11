@@ -93,7 +93,8 @@
               
         <SwitchPreference
                 android:key="srgb"
-                android:title="@string/srgb_title" />
+                android:title="@string/srgb_title"
+                android:summary="@string/srgb_summary" />
 
         <SwitchPreference
                 android:key="tap_to_wake"
