@@ -37,13 +37,13 @@
         <Preference android:key="vertex_version"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/vertex_version"
-                android:summary="@string/vertex_version_default" />
+                android:summary="@string/vertex_version_summary" />
 
         <!-- Device Maintainer -->
         <Preference android:key="device_maintainer"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/device_maintainer"
-                android:summary="@string/device_info_default" />
+                android:summary="@string/device_maintainer_summary" />
 
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"

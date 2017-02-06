@@ -37,9 +37,9 @@
 
     <!--VertexOS Version-->
     <string name="vertex_version">VertexOS version</string>
-    <string name="vertex_version_default">Unknown</string>
+    <string name="vertex_version_summary">%s</string>
 
     <!-- About phone screen, device maintainer name -->
     <string name="device_maintainer">Device maintainer</string>
-    <string name="device_maintainers">Device maintainers</string>
+    <string name="device_maintainer_summary">%s</string>
 </resources>

@@ -69,6 +69,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_BASEBAND_VERSION = "baseband_version";
     private static final String KEY_FIRMWARE_VERSION = "firmware_version";
     private static final String KEY_VERTEX_VERSION = "vertex_version"; 
+    private static final String PROPERTY_VERTEX_VERSION = "ro.modversion"; 
     private static final String KEY_SECURITY_PATCH = "security_patch";
     private static final String KEY_UPDATE_SETTING = "additional_system_update_settings";
     private static final String KEY_EQUIPMENT_ID = "fcc_equipment_id";
@@ -85,6 +86,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
     private static final String KEY_DEVICE_MAINTAINER = "device_maintainer";
+    private static final String PROPERTY_DEVICE_MAINTAINER = "ro.vertex.maintainer";
 
     long[] mHits = new long[3];
     int mDevHitCountdown;
@@ -147,9 +149,14 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         if(TextUtils.isEmpty(mMbnVersion)){
             getPreferenceScreen().removePreference(findPreference(KEY_MBN_VERSION));
         }
-        setValueSummary(KEY_VERTEX_VERSION, "ro.modversion");
-        findPreference(KEY_VERTEX_VERSION).setEnabled(true);
-        setMaintainerSummary(KEY_DEVICE_MAINTAINER, "ro.vertex.maintainer");
+        setValueSummary(KEY_VERTEX_VERSION, PROPERTY_VERTEX_VERSION);
+        // Remove VertexOS Version preference if property is not present
+        removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_VERTEX_VERSION,
+                PROPERTY_VERTEX_VERSION);
+        setValueSummary(KEY_DEVICE_MAINTAINER, PROPERTY_DEVICE_MAINTAINER);
+        // Remove Maintainer preference if property is not present
+        removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_VERTEX_VERSION,
+                PROPERTY_VERTEX_VERSION);
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
@@ -458,20 +465,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             findPreference(preference).setSummary(
                     SystemProperties.get(property,
                             getResources().getString(R.string.device_info_default)));
-        } catch (RuntimeException e) {
-            // No recovery
-        }
-    }
-
-    private void setMaintainerSummary(String preference, String property) {
-        try {
-            String maintainers = SystemProperties.get(property,
-                    getResources().getString(R.string.device_info_default));
-            findPreference(preference).setSummary(maintainers);
-            if (maintainers.contains(",")) {
-                findPreference(preference).setTitle(
-                        getResources().getString(R.string.device_maintainers));
-            }
         } catch (RuntimeException e) {
             // No recovery
         }
