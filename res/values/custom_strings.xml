@@ -22,6 +22,9 @@
     <string name="srgb_title">sRGB mode</string>
     <string name="srgb_summary">Enable sRGB display calibration</string>
 
+    <!-- Strings for Dialog ok button -->
+    <string name="ok">OK</string>
+
     <!-- Menu label for reset the battery stats -->
     <string name="menu_stats_reset">Reset stats</string>
     <!-- Reset stats confirmation dialog's message -->
