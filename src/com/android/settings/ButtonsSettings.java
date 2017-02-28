@@ -144,6 +144,7 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
         }
 
         /* Swap Slider order */
+/*
         mSwapSliderOrder = (SwitchPreference) findPreference(KEY_SWAP_SLIDER_ORDER);
         if (mSwapSliderOrder != null) {
             if (mHasAlertSlider) {
@@ -153,6 +154,7 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
                 removePreference(KEY_SWAP_SLIDER_ORDER);
             }
         }
+*/
 
         /* Button Brightness */
         mButtonBrightness = (SwitchPreference) findPreference(KEY_BUTTON_BRIGHTNESS);
@@ -346,8 +348,10 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
             return Settings.System.NAVIGATION_BAR_ENABLED;
         } else if (preference == mSwapNavigationkeys) {
             return Settings.System.SWAP_NAVIGATION_KEYS;
+/*
         } else if (preference == mSwapSliderOrder) {
             return Settings.System.ALERT_SLIDER_ORDER;
+*/
         } else if (preference == mButtonBrightness) {
             return Settings.System.BUTTON_BRIGHTNESS_ENABLED;
         } else if (preference == mHomeLongPressAction) {
@@ -396,10 +400,10 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
 
         final boolean swapNavigationkeysEnabled = Settings.System.getIntForUser(resolver,
                 Settings.System.SWAP_NAVIGATION_KEYS, 0, UserHandle.USER_CURRENT) != 0;
-
+/*
         final boolean swapSliderOrderEnabled = Settings.System.getIntForUser(resolver,
                 Settings.System.ALERT_SLIDER_ORDER, 0, UserHandle.USER_CURRENT) != 0;
-
+*/
         final boolean buttonBrightnessEnabled = Settings.System.getIntForUser(resolver,
                 Settings.System.BUTTON_BRIGHTNESS_ENABLED, 1, UserHandle.USER_CURRENT) != 0;
 
@@ -413,11 +417,11 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
             mSwapNavigationkeys.setEnabled(navigationBarEnabled
                     || hasBack && hasAppSwitch);
         }
-
+/*
         if (mSwapSliderOrder != null) {
             mSwapSliderOrder.setChecked(swapSliderOrderEnabled);
         }
-
+*/
         if (mButtonBrightness != null) {
             mButtonBrightness.setChecked(buttonBrightnessEnabled);
         }
