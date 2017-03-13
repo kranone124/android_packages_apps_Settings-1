@@ -93,4 +93,5 @@
     <string name="action_last_app">Launch last app</string>
     <string name="action_splitscreen">Splitscreen</string>
     <string name="action_kill_app">Kill app</string>
+    <string name="action_screen_off">Turn off screen</string>
 </resources>
