@@ -118,4 +118,8 @@
 
     <!-- Hostname setting -->
     <string name="device_hostname">Device hostname</string>
+
+    <!-- AOSP-CAF Version -->
+    <string name="version_title">CAF Version</string>
+    <string name="version_default">Unknown</string>
 </resources>
