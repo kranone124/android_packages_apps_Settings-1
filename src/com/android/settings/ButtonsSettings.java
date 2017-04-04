@@ -86,8 +86,9 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
     private Handler mHandler;
 
     private int mDeviceHardwareKeys;
-
+/*
     private boolean mHasAlertSlider = false;
+*/
 
     private ListPreference mHomeLongPressAction;
     private ListPreference mHomeDoubleTapAction;
@@ -121,10 +122,11 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
 
         mDeviceHardwareKeys = res.getInteger(
                 com.android.internal.R.integer.config_deviceHardwareKeys);
-
+/*
         mHasAlertSlider = res.getBoolean(com.android.internal.R.bool.config_hasAlertSlider)
                 && !TextUtils.isEmpty(res.getString(com.android.internal.R.string.alert_slider_state_path))
                 && !TextUtils.isEmpty(res.getString(com.android.internal.R.string.alert_slider_uevent_match_path));
+*/
 
         /* Navigation Bar */
         mNavigationBar = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR);
