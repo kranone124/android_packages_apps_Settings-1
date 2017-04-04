@@ -33,6 +33,12 @@
                     android:targetClass="@string/additional_system_update_menu" />
         </PreferenceScreen>
 
+        <!-- VertexOS version -->
+        <Preference android:key="vertex_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/vertex_version"
+                android:summary="@string/vertex_version_default" />
+
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status"
