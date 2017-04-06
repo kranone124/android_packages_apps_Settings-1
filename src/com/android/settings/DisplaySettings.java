@@ -513,7 +513,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
 
         if (mSrgbPreference != null) {
-            int value = Settings.Secure.getInt(getContentResolver(), SRGB_ENABLED, 0);
+            int value = Settings.Secure.getInt(getContentResolver(), SRGB_ENABLED, 1);
             mSrgbPreference.setChecked(value != 0);
         }
         // Update camera gesture #1 if it is available.
