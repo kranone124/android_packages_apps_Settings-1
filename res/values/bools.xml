@@ -93,7 +93,7 @@
     <bool name="config_settings_rjil_layout">false</bool>
 
     <!-- Whether to enable StorageCleaner Settings -->
-    <bool name="enable_storage_cleanup">true</bool>
+    <bool name="enable_storage_cleanup">false</bool>
 
     <!-- Whether to hide ims apn -->
     <bool name="config_hide_ims_apns">false</bool>
