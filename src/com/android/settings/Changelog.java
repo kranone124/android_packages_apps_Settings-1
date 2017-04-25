@@ -16,7 +16,6 @@
 
 package com.android.settings;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,13 +23,17 @@ import android.view.ViewGroup;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.android.internal.logging.MetricsLogger;
+import com.android.internal.logging.MetricsProto.MetricsEvent;
+
 import com.android.settings.R;
+import com.android.settings.SettingsPreferenceFragment;
 
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Changelog extends Fragment {
+public class Changelog extends SettingsPreferenceFragment {
 
     private static final String CHANGELOG_PATH = "/system/etc/Changelog.txt";
 
@@ -68,5 +71,10 @@ public class Changelog extends Fragment {
         scrollView.addView(textView);
 
         return scrollView;
+    }
+
+    @Override
+    protected int getMetricsCategory() {
+        return MetricsEvent.APPLICATION;
     }
 }
