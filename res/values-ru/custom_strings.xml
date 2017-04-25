@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2007 The Android Open Source Project
+** Copyright (C) 2012-2015 The CyanogenMod Project
+** Copyright 2016 The ParanoidAndroid Project
+** Copyright (c) 2016 Project Substratum
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Bluetooth settings. A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
+    <string name="bluetooth_accept_all_files">Принимать все типы файлов</string>
+
+    <!-- sRGB -->
+    <string name="srgb_title">Режим sRGB</string>
+    <string name="srgb_summary">Включить калибровку sRGB для дисплея</string>
+
+    <!-- Strings for Dialog ok button -->
+    <string name="ok">ОК</string>
+
+    <!-- Menu label for reset the battery stats -->
+    <string name="menu_stats_reset">Сброс статистики</string>
+    <!-- Reset stats confirmation dialog's message -->
+    <string name="reset_stats_msg">История статистики батареи будет сброшена</string>
+
+    <!-- Linked / unlinked notification volume -->
+    <string name="link_volume_option_title">Объединить громкость звонков и уведомлений</string>
+    <string name="notification_volume_option_title">Громкость уведомлений</string>
+    <string name="ring_notification_volume_option_title">Звонки и уведомления</string>
+
+    <!--VertexOS Version-->
+    <string name="vertex_version">Версия VertexOS</string>
+    <string name="vertex_version_summary">%s</string>
+
+    <!-- About phone screen, device maintainer name -->
+    <string name="device_maintainer">Разработчик</string>
+    <string name="device_maintainer_summary">%s</string>
+
+    <!-- Status bar - Battery -->
+    <string name="battery_style_title">Стиль иконки батареи</string>
+    <string name="battery_style_icon">Стандартный</string>
+    <string name="battery_style_circle">Круг</string>
+    <string name="battery_style_solid">Сплошной круг</string>
+    <string name="battery_style_text">Текст</string>
+    <string name="battery_style_hidden">Скрыть</string>
+
+    <!-- Status bar - Battery percentage -->
+    <string name="battery_percentage_title">Проценты батареи</string>
+    <string name="battery_percentage_default">Скрыть (стандартн.)</string>
+    <string name="battery_percentage_text_inside">Внутри иконки</string>
+    <string name="battery_percentage_text_next">Рядом с иконкой</string>
+
+    <!-- Long press to skip music -->
+    <string name="volbtn_music_controls_title">Управление воспроизведением</string>
+    <string name="volbtn_music_controls_summary">Когда экран выключен, долгое нажатие на кнопки громкости будет переключать треки</string>
+
+    <!-- Changelog -->
+    <string name="changelog_custom_title">Список изменений</string>
+    <string name="changelog_custom_error">Невозможно загрузить список изменений</string>
+
+    <string name="buttons_pref_title">Кнопки</string>
+    <string name="buttons_pref_summary">Настройка кнопок вашего устройства</string>
+    <string name="enable_navigation_bar_title">Включить программные кнопки</string>
+    <string name="enable_navigation_bar_summary">Включить наэкранные кнопки навигации</string>
+    <string name="swap_navigation_keys_title">Поменять кнопки местами</string>
+    <string name="swap_navigation_keys_summary">Поменять местами правую и левую кнопки</string>
+    <string name="swap_slider_order_title">Поменять значения переключателя</string>
+    <string name="swap_slider_order_summary">Поменять последовательность режимов переключателя</string>
+    <string name="hardware_brightness_keys_title">Подсветка</string>
+    <string name="hardware_brightness_keys_summary">Включить подсветку кнопок навигации</string>
+    <string name="home_key_title">Домой</string>
+    <string name="back_key_title">Назад</string>
+    <string name="menu_key_title">Меню</string>
+    <string name="assist_key_title">Вспомогательная кнопка</string>
+    <string name="app_switch_key_title">Недавние</string>
+    <string name="camera_key_title">Камера</string>
+    <string name="short_press_title">Короткое нажатие</string>
+    <string name="long_press_title">Длинное нажатие</string>
+    <string name="double_tap_title">Двойное нажатие</string>
+    <string name="action_nothing">Нет действия</string>
+    <string name="action_menu">Открыть/закрыть меню</string>
+    <string name="action_app_switch">Недавние</string>
+    <string name="action_search">Поисковый помощник</string>
+    <string name="action_voice_search">Голосовой поиск</string>
+    <string name="action_in_app_search">Поиск в приложении</string>
+    <string name="action_launch_camera">Открыть камеру</string>
+    <string name="action_last_app">Запустить последнее приложение</string>
+    <string name="action_splitscreen">Раздельный экран</string>
+    <string name="action_kill_app">Закрыть приложение</string>
+    <string name="action_screen_off">Выключить экран</string>
+
+    <!-- SIM Enabler/Disabler -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_enabled">вкл.</string>
+    <string name="sim_disabled">откл.</string>
+    <string name="sim_missing">отсутсвует</string>
+    <string name="sim_enabler_need_disable_sim">SIM-карта будет отключена. Вы хотите продолжить?</string>
+    <string name="sim_enabler_will_disable_sim_title">Внимание</string>
+    <string name="sim_enabler_need_switch_data_service">Эта SIM-карта будет отключена и SIM <xliff:g id="slotid">%1$s</xliff:g> будет использоваться для служб данных. Вы действительно хотите продолжить?</string>
+    <string name="sim_enabler_airplane_on">Невозможно завершить операцию пока включен режим В полете.</string>
+    <string name="sim_enabler_in_call">Невозможно завершить операцию в течение звонка.</string>
+    <string name="sim_enabler_both_inactive">Нельзя отключить все SIM-карты</string>
+    <string name="sim_enabler_enabling">Активация\u2026</string>
+    <string name="sim_enabler_disabling">Отключение\u2026</string>
+    <string name="sub_activate_success">SIM активирована.</string>
+    <string name="sub_activate_failed">Активация не удалась.</string>
+    <string name="sub_deactivate_success">SIM отключена.</string>
+    <string name="sub_deactivate_failed">Отключение не удалось.</string>
+
+    <!-- Preference category for LAN development settings. [CHAR LIMIT=25] -->
+    <string name="debug_LAN_category">Настройки LAN</string>
+
+    <!-- Hostname setting -->
+    <string name="device_hostname">Хост-название устройства</string>
+
+    <!-- AOSP-CAF Version -->
+    <string name="version_title">Версия CAF</string>
+    <string name="version_default">Неизвестно</string>
+    
+    <!-- Advanced reboot options -->
+    <string name="advanced_reboot_title">Расширенная перезагрузка</string>
+    <string name="advanced_reboot_summary">Когда устройство разблокировано, включить возможность перезагрузки в загрузчик или режим восстановления</string>
+    
+       <!-- Manage applications: show substratum overlays -->
+   <string name="filter_substratum_apps">Наслоения Substratum</string>
+   <string name="menu_show_substratum">Показать наслоения</string>
+   <string name="menu_hide_substratum">Скрыть наслоения</string>
+
+   <!-- Manage applications: show substratum icon overlays -->
+   <string name="filter_substratum_icons">Иконка наслоений Substratum</string>
+   <string name="menu_show_substratum_icons">Показать иконку наслоений</string>
+   <string name="menu_hide_substratum_icons">Скрыть иконку наслоений</string>
+
+   <!-- Force authorize substratum packages -->
+   <string name="force_authorize_substratum_packages_title">Принудительно авторизовывать каждое приложение темы</string>
+   <string name="force_authorize_substratum_packages_summary">Разрешить темы из неизвестных источников</string>
+</resources>
