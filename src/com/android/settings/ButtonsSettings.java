@@ -45,6 +45,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static android.provider.Settings.Secure.CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED;
+
 public class ButtonsSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener, Indexable {
     private static final String TAG = "SystemSettings";
@@ -83,6 +85,9 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
 
     private static final String EMPTY_STRING = "";
 
+    private static final String KEY_CAMERA_DOUBLE_TAP_POWER_GESTURE
+            = "camera_double_tap_power_gesture";
+
     private Handler mHandler;
 
     private int mDeviceHardwareKeys;
@@ -107,6 +112,8 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mSwapNavigationkeys;
     private SwitchPreference mSwapSliderOrder;
     private SwitchPreference mButtonBrightness;
+
+	private SwitchPreference mCameraDoubleTapPowerGesturePreference;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -277,6 +284,15 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
                 defaultDoubleTapOnCameraKeyBehavior,
                 UserHandle.USER_CURRENT);
         mCameraDoubleTapAction = initActionList(KEY_CAMERA_DOUBLE_TAP, doubleTapOnCameraKeyBehavior);
+
+		/* Power Button Double Tap for Camera */
+        if (isCameraDoubleTapPowerGestureAvailable(getResources())) {              
+            mCameraDoubleTapPowerGesturePreference        
+                    = (SwitchPreference) findPreference(KEY_CAMERA_DOUBLE_TAP_POWER_GESTURE);        
+            mCameraDoubleTapPowerGesturePreference.setOnPreferenceChangeListener(this);              
+        } else {        
+            removePreference(KEY_CAMERA_DOUBLE_TAP_POWER_GESTURE);        
+        }    
     }
 
     @Override
@@ -315,6 +331,14 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
     }
 
     private boolean handleOnPreferenceChange(Preference preference, Object newValue) {
+        /* This needs to be executed first */
+        if (preference == mCameraDoubleTapPowerGesturePreference) {        
+            boolean value = (Boolean) newValue;        
+            Settings.Secure.putInt(getContentResolver(), CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED,        
+                    value ? 0 : 1 /* Backwards because setting is for disabling */);        
+			return true;
+        }
+
         final String setting = getSystemPreferenceString(preference);
 
         if (TextUtils.isEmpty(setting)) {
@@ -477,6 +501,12 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
         if (!hasCamera && cameraCategory != null) {
             prefScreen.removePreference(cameraCategory);
         }
+		
+        if (mCameraDoubleTapPowerGesturePreference != null) {        
+            int value = Settings.Secure.getInt(        
+                    getContentResolver(), CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED, 0);        
+            mCameraDoubleTapPowerGesturePreference.setChecked(value == 0);              
+        }
     }
 
     @Override
@@ -517,8 +547,16 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
                 final boolean isSecondaryUser = myUserId != UserHandle.USER_OWNER;
 
                 // TODO: Implement search index provider.
+                if (!isCameraDoubleTapPowerGestureAvailable(context.getResources())) {        
+                    result.add(KEY_CAMERA_DOUBLE_TAP_POWER_GESTURE);        
+                }
 
                 return result;
             }
         };
+
+    private static boolean isCameraDoubleTapPowerGestureAvailable(Resources res) {        
+        return res.getBoolean(        
+                com.android.internal.R.bool.config_cameraDoubleTapPowerGestureEnabled);              
+    }
 }

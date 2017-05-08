@@ -95,6 +95,7 @@
     <string name="action_splitscreen">Splitscreen</string>
     <string name="action_kill_app">Kill app</string>
     <string name="action_screen_off">Turn off screen</string>
+    <string name="power_key_title">Power button</string>
 
     <!-- Sim Toggle -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
