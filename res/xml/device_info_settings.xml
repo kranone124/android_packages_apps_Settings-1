@@ -52,8 +52,8 @@
                 android:summary="@string/system_update_settings_list_item_summary">
             <intent
                     android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.ota.updates"
-                    android:targetClass="com.ota.updates.activities.MainActivity" />
+                    android:targetPackage="com.vertex.ota"
+                    android:targetClass="com.vertex.ota.activities.MainActivity" />
         </PreferenceScreen>
 
         <!-- Changelog -->
