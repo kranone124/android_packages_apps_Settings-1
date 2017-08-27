@@ -109,8 +109,8 @@
   <!-- Hostname setting -->
   <string name="device_hostname">Сетевое имя устройства</string>
   <!-- AOSP-CAF Version -->
-  <string name="version_title">CAF Version</string>
-  <string name="version_default">Unknown</string>
+  <string name="version_title">Версия CAF</string>
+  <string name="version_default">Неизвестно</string>
   <!-- Advanced reboot options -->
   <string name="advanced_reboot_title">Расширенная перезагрузка</string>
   <string name="advanced_reboot_summary">Когда устройство разблокировано, включить возможность перезагрузки в загрузчик или режим восстановления</string>

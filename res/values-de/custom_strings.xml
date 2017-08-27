@@ -33,18 +33,18 @@
   <string name="notification_volume_option_title">Benachrichtigungslautstärke</string>
   <string name="ring_notification_volume_option_title">Anruf- und Benachrichtigungslautstärke</string>
   <!--VertexOS Version-->
-  <string name="vertex_version">VertexOS version</string>
+  <string name="vertex_version">VertexOS-Version</string>
   <string name="vertex_version_summary">%s</string>
   <!-- About phone screen, device maintainer name -->
-  <string name="device_maintainer">Device maintainer</string>
+  <string name="device_maintainer">Geräte Maintainer</string>
   <string name="device_maintainer_summary">%s</string>
   <!-- Status bar - Battery -->
-  <string name="battery_style_title">Battery status style</string>
-  <string name="battery_style_icon">Icon</string>
-  <string name="battery_style_circle">Circle</string>
-  <string name="battery_style_solid">Solid</string>
+  <string name="battery_style_title">Stil des Batteriesymbols</string>
+  <string name="battery_style_icon">Symbol</string>
+  <string name="battery_style_circle">Kreis</string>
+  <string name="battery_style_solid">Voll</string>
   <string name="battery_style_text">Text</string>
-  <string name="battery_style_hidden">Hidden</string>
+  <string name="battery_style_hidden">Ausgeblendet</string>
   <!-- Status bar - Battery percentage -->
   <string name="battery_percentage_title">Batterie Prozentanzeige</string>
   <string name="battery_percentage_default">Versteckt (Standard)</string>
@@ -59,76 +59,76 @@
   <string name="buttons_pref_title">Schaltflächen</string>
   <string name="buttons_pref_summary">Passen Sie Ihr Gerätetasten und Knöpfe an</string>
   <string name="enable_navigation_bar_title">Software Tasten aktivieren</string>
-  <string name="enable_navigation_bar_summary">Enable on-screen navigation keys</string>
+  <string name="enable_navigation_bar_summary">Navigationstasten auf dem Bildschirm aktivieren</string>
   <string name="swap_navigation_keys_title">Tasten tauschen</string>
-  <string name="swap_navigation_keys_summary">Swap back and recents keys</string>
-  <string name="swap_slider_order_title">Swap slider</string>
-  <string name="swap_slider_order_summary">Swap the alert slider modes order</string>
-  <string name="hardware_brightness_keys_title">Backlight</string>
-  <string name="hardware_brightness_keys_summary">Enable navigation keys backlight</string>
-  <string name="home_key_title">Home button</string>
-  <string name="back_key_title">Back button</string>
-  <string name="menu_key_title">Menu button</string>
-  <string name="assist_key_title">Assist button</string>
-  <string name="app_switch_key_title">Recents button</string>
+  <string name="swap_navigation_keys_summary">Zurück- und Letzte-Tasten tauschen</string>
+  <string name="swap_slider_order_title">Vertausche den Schieberegler</string>
+  <string name="swap_slider_order_summary">Vertausche die Alarm-Schieberegler Modi</string>
+  <string name="hardware_brightness_keys_title">Hintergrundbeleuchtung</string>
+  <string name="hardware_brightness_keys_summary">Hintergrundbeleuchtung für Navigationstasten aktivieren</string>
+  <string name="home_key_title">Start-Taste</string>
+  <string name="back_key_title">Zurück-Taste</string>
+  <string name="menu_key_title">Menü-Taste</string>
+  <string name="assist_key_title">Assist-Taste</string>
+  <string name="app_switch_key_title">Anwendungsverlauf-Taste</string>
   <string name="camera_key_title">Kamera-Taste</string>
-  <string name="short_press_title">Short press action</string>
-  <string name="long_press_title">Long press action</string>
-  <string name="double_tap_title">Double tap action</string>
-  <string name="action_nothing">No action</string>
-  <string name="action_menu">Open/close menu</string>
-  <string name="action_app_switch">Recents</string>
-  <string name="action_search">Search assistant</string>
-  <string name="action_voice_search">Voice search</string>
-  <string name="action_in_app_search">In-app search</string>
-  <string name="action_launch_camera">Open camera</string>
-  <string name="action_last_app">Launch last app</string>
-  <string name="action_splitscreen">Splitscreen</string>
-  <string name="action_kill_app">Kill app</string>
-  <string name="action_screen_off">Turn off screen</string>
-  <string name="power_key_title">Power button</string>
+  <string name="short_press_title">Kurzes Drücken</string>
+  <string name="long_press_title">Langes Drücken</string>
+  <string name="double_tap_title">Doppeltes Tippen</string>
+  <string name="action_nothing">Keine Aktion</string>
+  <string name="action_menu">Öffne/Schließe Menü</string>
+  <string name="action_app_switch">Anwendungsverlauf</string>
+  <string name="action_search">Suchassistent</string>
+  <string name="action_voice_search">Sprachsuche</string>
+  <string name="action_in_app_search">In-App-Suche</string>
+  <string name="action_launch_camera">Kamera öffnen</string>
+  <string name="action_last_app">Letzte App starten</string>
+  <string name="action_splitscreen">Geteilter Bildschirm</string>
+  <string name="action_kill_app">App beenden</string>
+  <string name="action_screen_off">Bildschirm ausschalten</string>
+  <string name="power_key_title">Ein-/Aus-Taste</string>
   <!-- Sim Toggle -->
-  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-  <string name="sim_enabled">enabled</string>
-  <string name="sim_disabled">disabled</string>
-  <string name="sim_missing">missing or faulty</string>
-  <string name="sim_enabler_need_disable_sim">SIM card will be deactivated. Do you want to continue?</string>
-  <string name="sim_enabler_will_disable_sim_title">Attention</string>
-  <string name="sim_enabler_need_switch_data_service">This SIM will be disabled and SIM <xliff:g id="slotid">%1$s</xliff:g> will be used for data services. Are you sure you want to continue?</string>
-  <string name="sim_enabler_airplane_on">Unable to perform the operation while airplane mode is on.</string>
-  <string name="sim_enabler_in_call">Unable to perform the operation while in call.</string>
-  <string name="sim_enabler_both_inactive">Can\'t disable all SIM cards</string>
-  <string name="sim_enabler_enabling">Activating\u2026</string>
-  <string name="sim_enabler_disabling">Deactivating\u2026</string>
-  <string name="sub_activate_success">SIM activated.</string>
-  <string name="sub_activate_failed">Activation failed.</string>
-  <string name="sub_deactivate_success">SIM deactivated.</string>
-  <string name="sub_deactivate_failed">Deactivation failed.</string>
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> ist <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+  <string name="sim_enabled">aktiviert</string>
+  <string name="sim_disabled">deaktiviert</string>
+  <string name="sim_missing">fehlt oder defekt</string>
+  <string name="sim_enabler_need_disable_sim">SIM-Karte wird deaktiviert. Möchten Sie fortfahren?</string>
+  <string name="sim_enabler_will_disable_sim_title">Achtung</string>
+  <string name="sim_enabler_need_switch_data_service">Diese SIM-Karte wird deaktiviert und SIM-Karte <xliff:g id="slotid">%1$s</xliff:g> wird für Datendienste weiterverwendet. Sind Sie sicher, dass Sie fortfahren möchten?</string>
+  <string name="sim_enabler_airplane_on">Vorgang kann nicht im Flugmodus durchgeführt werden.</string>
+  <string name="sim_enabler_in_call">Vorgang kann nicht während eines Anrufs durchgeführt werden.</string>
+  <string name="sim_enabler_both_inactive">Alle SIM-Karten können nicht deaktiviert werden</string>
+  <string name="sim_enabler_enabling">Aktiviere\u2026</string>
+  <string name="sim_enabler_disabling">Deaktiviere\u2026</string>
+  <string name="sub_activate_success">SIM-Karte aktiviert.</string>
+  <string name="sub_activate_failed">Aktivierung fehlgeschlagen.</string>
+  <string name="sub_deactivate_success">SIM-Karte deaktiviert.</string>
+  <string name="sub_deactivate_failed">Deaktivierung fehlgeschlagen.</string>
   <!-- Preference category for LAN development settings. [CHAR LIMIT=25] -->
-  <string name="debug_LAN_category">LAN settings</string>
+  <string name="debug_LAN_category">LAN-Einstellungen</string>
   <!-- Hostname setting -->
-  <string name="device_hostname">Device hostname</string>
+  <string name="device_hostname">Hostname des Gerätes</string>
   <!-- AOSP-CAF Version -->
-  <string name="version_title">CAF Version</string>
-  <string name="version_default">Unknown</string>
+  <string name="version_title">CAF-Version</string>
+  <string name="version_default">Unbekannt</string>
   <!-- Advanced reboot options -->
-  <string name="advanced_reboot_title">Advanced reboot</string>
-  <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery or bootloader</string>
+  <string name="advanced_reboot_title">Erweiterter Neustart</string>
+  <string name="advanced_reboot_summary">Bei entsperrtem Bildschirm dem Neustartmenü Optionen für Neustart in Recovery, Bootloader oder schnellen Neustart hinzufügen</string>
   <!-- Sim Enabler -->
-  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-  <string name="sim_enabled">enabled</string>
-  <string name="sim_disabled">disabled</string>
-  <string name="sim_missing">missing or faulty</string>
-  <string name="sim_enabler_need_disable_sim">SIM card will be deactivated. Do you want to continue?</string>
-  <string name="sim_enabler_will_disable_sim_title">Attention</string>
-  <string name="sim_enabler_need_switch_data_service">This SIM will be disabled and SIM <xliff:g id="slotid">%1$s</xliff:g> will be used for data services. Are you sure you want to continue?</string>
-  <string name="sim_enabler_airplane_on">Unable to perform the operation while airplane mode is on.</string>
-  <string name="sim_enabler_in_call">Unable to perform the operation while in call.</string>
-  <string name="sim_enabler_both_inactive">Can\'t disable all SIM cards</string>
-  <string name="sim_enabler_enabling">Activating\u2026</string>
-  <string name="sim_enabler_disabling">Deactivating\u2026</string>
-  <string name="sub_activate_success">SIM activated.</string>
-  <string name="sub_activate_failed">Activation failed.</string>
-  <string name="sub_deactivate_success">SIM deactivated.</string>
-  <string name="sub_deactivate_failed">Deactivation failed.</string>
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> ist <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+  <string name="sim_enabled">aktiviert</string>
+  <string name="sim_disabled">deaktiviert</string>
+  <string name="sim_missing">fehlt oder defekt</string>
+  <string name="sim_enabler_need_disable_sim">SIM-Karte wird deaktiviert. Möchten Sie fortfahren?</string>
+  <string name="sim_enabler_will_disable_sim_title">Achtung</string>
+  <string name="sim_enabler_need_switch_data_service">Diese SIM-Karte wird deaktiviert und SIM-Karte <xliff:g id="slotid">%1$s</xliff:g> wird für Datendienste weiterverwendet. Sind Sie sicher, dass Sie fortfahren möchten?</string>
+  <string name="sim_enabler_airplane_on">Vorgang kann nicht im Flugmodus durchgeführt werden.</string>
+  <string name="sim_enabler_in_call">Vorgang kann nicht während eines Anrufs durchgeführt werden.</string>
+  <string name="sim_enabler_both_inactive">Alle SIM-Karten können nicht deaktiviert werden</string>
+  <string name="sim_enabler_enabling">Aktiviere\u2026</string>
+  <string name="sim_enabler_disabling">Deaktiviere\u2026</string>
+  <string name="sub_activate_success">SIM-Karte aktiviert.</string>
+  <string name="sub_activate_failed">Aktivierung fehlgeschlagen.</string>
+  <string name="sub_deactivate_success">SIM-Karte deaktiviert.</string>
+  <string name="sub_deactivate_failed">Deaktivierung fehlgeschlagen.</string>
 </resources>

@@ -20,109 +20,109 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- sRGB -->
-  <string name="srgb_title">sRGB mode</string>
-  <string name="srgb_summary">Enable sRGB display calibration</string>
+  <string name="srgb_title">מצב sRGB</string>
+  <string name="srgb_summary">הפעל מצב sRGB</string>
   <!-- Strings for Dialog ok button -->
-  <string name="ok">OK</string>
+  <string name="ok">אוקיי</string>
   <!-- Menu label for reset the battery stats -->
-  <string name="menu_stats_reset">Reset stats</string>
+  <string name="menu_stats_reset">אתחל נתוני סוללה</string>
   <!-- Reset stats confirmation dialog's message -->
-  <string name="reset_stats_msg">Battery history stats are going to be reset</string>
+  <string name="reset_stats_msg">היסטורית השימוש בסוללה הולכת להתאפס</string>
   <!-- Linked / unlinked notification volume -->
-  <string name="link_volume_option_title">Link ring and notification volume</string>
-  <string name="notification_volume_option_title">Notification volume</string>
-  <string name="ring_notification_volume_option_title">Ring and notification volume</string>
+  <string name="link_volume_option_title">קשר את עוצמת הצלצול וההתראות</string>
+  <string name="notification_volume_option_title">עוצמת הקול של התראות</string>
+  <string name="ring_notification_volume_option_title">עוצמת צלצול והתראות</string>
   <!--VertexOS Version-->
-  <string name="vertex_version">VertexOS version</string>
-  <string name="vertex_version_summary">%s</string>
+  <string name="vertex_version">גרסת VertexOS</string>
+  <string name="vertex_version_summary">סיכום גרסת vertex</string>
   <!-- About phone screen, device maintainer name -->
-  <string name="device_maintainer">Device maintainer</string>
+  <string name="device_maintainer">מתחזק למכשיר</string>
   <string name="device_maintainer_summary">%s</string>
   <!-- Status bar - Battery -->
-  <string name="battery_style_title">Battery status style</string>
-  <string name="battery_style_icon">Icon</string>
-  <string name="battery_style_circle">Circle</string>
-  <string name="battery_style_solid">Solid</string>
-  <string name="battery_style_text">Text</string>
-  <string name="battery_style_hidden">Hidden</string>
+  <string name="battery_style_title">סגנון סוללה</string>
+  <string name="battery_style_icon">סמל</string>
+  <string name="battery_style_circle">עיגול</string>
+  <string name="battery_style_solid">עיגול מלא</string>
+  <string name="battery_style_text">טקסט</string>
+  <string name="battery_style_hidden">הסתר</string>
   <!-- Status bar - Battery percentage -->
-  <string name="battery_percentage_title">Battery percentage</string>
-  <string name="battery_percentage_default">Hidden (default)</string>
-  <string name="battery_percentage_text_inside">Inside the icon</string>
-  <string name="battery_percentage_text_next">Next to the icon</string>
+  <string name="battery_percentage_title">אחוזי סוללה</string>
+  <string name="battery_percentage_default">מוסתר(ברירת מחדל)</string>
+  <string name="battery_percentage_text_inside">בתוך הסמל</string>
+  <string name="battery_percentage_text_next">לצד הסמל</string>
   <!-- Long press to skip music -->
-  <string name="volbtn_music_controls_title">Playback control</string>
-  <string name="volbtn_music_controls_summary">When the screen is off, long pressing the volume keys will seek music tracks</string>
+  <string name="volbtn_music_controls_title">שליטה בפלייבק</string>
+  <string name="volbtn_music_controls_summary">כאשר המסך כבוי, לחיצה ארוכה על מקשי הווליום תעבור בין שירים</string>
   <!-- Changelog -->
-  <string name="changelog_custom_title">Changelog</string>
-  <string name="changelog_custom_error">Unable to load changelog</string>
-  <string name="buttons_pref_title">Buttons</string>
-  <string name="buttons_pref_summary">Customize your device keys and buttons</string>
-  <string name="enable_navigation_bar_title">Enable software keys</string>
-  <string name="enable_navigation_bar_summary">Enable on-screen navigation keys</string>
-  <string name="swap_navigation_keys_title">Swap keys</string>
-  <string name="swap_navigation_keys_summary">Swap back and recents keys</string>
-  <string name="swap_slider_order_title">Swap slider</string>
-  <string name="swap_slider_order_summary">Swap the alert slider modes order</string>
-  <string name="hardware_brightness_keys_title">Backlight</string>
-  <string name="hardware_brightness_keys_summary">Enable navigation keys backlight</string>
-  <string name="home_key_title">Home button</string>
-  <string name="back_key_title">Back button</string>
-  <string name="menu_key_title">Menu button</string>
-  <string name="assist_key_title">Assist button</string>
-  <string name="app_switch_key_title">Recents button</string>
-  <string name="camera_key_title">Camera button</string>
-  <string name="short_press_title">Short press action</string>
-  <string name="long_press_title">Long press action</string>
-  <string name="double_tap_title">Double tap action</string>
-  <string name="action_nothing">No action</string>
-  <string name="action_menu">Open/close menu</string>
-  <string name="action_app_switch">Recents</string>
-  <string name="action_search">Search assistant</string>
-  <string name="action_voice_search">Voice search</string>
-  <string name="action_in_app_search">In-app search</string>
-  <string name="action_launch_camera">Open camera</string>
-  <string name="action_last_app">Launch last app</string>
-  <string name="action_splitscreen">Splitscreen</string>
-  <string name="action_kill_app">Kill app</string>
-  <string name="action_screen_off">Turn off screen</string>
-  <string name="power_key_title">Power button</string>
+  <string name="changelog_custom_title">לוג שינויים</string>
+  <string name="changelog_custom_error">לא ניתן לטעון את לוגו השינויים</string>
+  <string name="buttons_pref_title">כפתורים</string>
+  <string name="buttons_pref_summary">ערוך את המקשים והכפתורים על מכשירך</string>
+  <string name="enable_navigation_bar_title">אפשר מקשי תוכנה</string>
+  <string name="enable_navigation_bar_summary">אפשר מקשי ניווט על גבי המסך</string>
+  <string name="swap_navigation_keys_title">החלף מקשים</string>
+  <string name="swap_navigation_keys_summary">החלף בין מקש אחורה למקש צפייה</string>
+  <string name="swap_slider_order_title">החלף סליידר</string>
+  <string name="swap_slider_order_summary">החלף את סדר המצבים בסליידר</string>
+  <string name="hardware_brightness_keys_title">תאורת רקע</string>
+  <string name="hardware_brightness_keys_summary">אפשר תאורה למקשי ניווט</string>
+  <string name="home_key_title">כפתור בית</string>
+  <string name="back_key_title">כפתור אחורה</string>
+  <string name="menu_key_title">כפתור תפריט</string>
+  <string name="assist_key_title">כפתור עוזר</string>
+  <string name="app_switch_key_title">כפתור צפייה</string>
+  <string name="camera_key_title">כפתור מצלמה</string>
+  <string name="short_press_title">פעולה לחיצה קצרה</string>
+  <string name="long_press_title">פעולה לחיצה ארוכה</string>
+  <string name="double_tap_title">פעולה לחיצה כפולה</string>
+  <string name="action_nothing">ללא פעולה</string>
+  <string name="action_menu">פתיחת/סגירת תפריט</string>
+  <string name="action_app_switch">יישומים אחרונים</string>
+  <string name="action_search">מסייע החיפוש</string>
+  <string name="action_voice_search">חיפוש קולי</string>
+  <string name="action_in_app_search">חיפוש בתוך היישום</string>
+  <string name="action_launch_camera">הפעל מצלמה</string>
+  <string name="action_last_app">הפעל יישום אחרון</string>
+  <string name="action_splitscreen">מסך מפוצל</string>
+  <string name="action_kill_app">עצור יישום</string>
+  <string name="action_screen_off">כבה מסך</string>
+  <string name="power_key_title">מקש הפעלה</string>
   <!-- Sim Toggle -->
-  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-  <string name="sim_enabled">enabled</string>
-  <string name="sim_disabled">disabled</string>
-  <string name="sim_missing">missing or faulty</string>
-  <string name="sim_enabler_need_disable_sim">SIM card will be deactivated. Do you want to continue?</string>
-  <string name="sim_enabler_will_disable_sim_title">Attention</string>
-  <string name="sim_enabler_need_switch_data_service">This SIM will be disabled and SIM <xliff:g id="slotid">%1$s</xliff:g> will be used for data services. Are you sure you want to continue?</string>
-  <string name="sim_enabler_airplane_on">Unable to perform the operation while airplane mode is on.</string>
-  <string name="sim_enabler_in_call">Unable to perform the operation while in call.</string>
-  <string name="sim_enabler_both_inactive">Can\'t disable all SIM cards</string>
-  <string name="sim_enabler_enabling">Activating\u2026</string>
-  <string name="sim_enabler_disabling">Deactivating\u2026</string>
-  <string name="sub_activate_success">SIM activated.</string>
-  <string name="sub_activate_failed">Activation failed.</string>
-  <string name="sub_deactivate_success">SIM deactivated.</string>
-  <string name="sub_deactivate_failed">Deactivation failed.</string>
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> הוא <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+  <string name="sim_enabled">מופעל</string>
+  <string name="sim_disabled">מופסק</string>
+  <string name="sim_missing">חסר או פגום</string>
+  <string name="sim_enabler_need_disable_sim">כרטיס ה-SIM יפסיק לפעול. האם ברצונך להמשיך?</string>
+  <string name="sim_enabler_will_disable_sim_title">לידיעתך</string>
+  <string name="sim_enabler_need_switch_data_service">SIM זה יהפוך ללא זמין ו-SIM <xliff:g id="slotid">%1$s</xliff:g> ישמש לשירותי נתונים. אתה בטוח שברצונך להמשיך?</string>
+  <string name="sim_enabler_airplane_on">אין אפשרות לבצע את הפעולה כאשר מצב טיסה פעיל.</string>
+  <string name="sim_enabler_in_call">אין אפשרות לבצע את הפעולה בזמן שיחה.</string>
+  <string name="sim_enabler_both_inactive">אין אפשרות להשבית את כל כרטיסי ה-SIM</string>
+  <string name="sim_enabler_enabling">מפעיל\u2026</string>
+  <string name="sim_enabler_disabling">מפסיק\u2026</string>
+  <string name="sub_activate_success">כרטיס ה־SIM הופעל.</string>
+  <string name="sub_activate_failed">הפעלה נכשלה.</string>
+  <string name="sub_deactivate_success">כרטיס ה־SIM כובה.</string>
+  <string name="sub_deactivate_failed">הכיבוי נכשל.</string>
   <!-- Preference category for LAN development settings. [CHAR LIMIT=25] -->
-  <string name="debug_LAN_category">LAN settings</string>
+  <string name="debug_LAN_category">הגדרות LAN</string>
   <!-- Hostname setting -->
-  <string name="device_hostname">Device hostname</string>
+  <string name="device_hostname">שם הרשת עבור המכשיר</string>
   <!-- AOSP-CAF Version -->
-  <string name="version_title">CAF Version</string>
-  <string name="version_default">Unknown</string>
+  <string name="version_title">גרסת CAF</string>
+  <string name="version_default">לא ידוע</string>
   <!-- Advanced reboot options -->
-  <string name="advanced_reboot_title">Advanced reboot</string>
-  <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery or bootloader</string>
+  <string name="advanced_reboot_title">אתחול מתקדם</string>
+  <string name="advanced_reboot_summary">כאשר מכשיר פתוח, הוסף אפשרויות של איתחול ל-recovery או bootloader</string>
   <!-- Sim Enabler -->
-  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-  <string name="sim_enabled">enabled</string>
-  <string name="sim_disabled">disabled</string>
-  <string name="sim_missing">missing or faulty</string>
-  <string name="sim_enabler_need_disable_sim">SIM card will be deactivated. Do you want to continue?</string>
-  <string name="sim_enabler_will_disable_sim_title">Attention</string>
-  <string name="sim_enabler_need_switch_data_service">This SIM will be disabled and SIM <xliff:g id="slotid">%1$s</xliff:g> will be used for data services. Are you sure you want to continue?</string>
-  <string name="sim_enabler_airplane_on">Unable to perform the operation while airplane mode is on.</string>
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> הוא <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+  <string name="sim_enabled">הופעל</string>
+  <string name="sim_disabled">הופסק</string>
+  <string name="sim_missing">חסר או פגום</string>
+  <string name="sim_enabler_need_disable_sim">כרטיס ה-SIM יפסיק לפעול. האם ברצונך להמשיך?</string>
+  <string name="sim_enabler_will_disable_sim_title">לידיעתך</string>
+  <string name="sim_enabler_need_switch_data_service">SIM זה יהפוך ללא זמין ו-SIM <xliff:g id="slotid">%1$s</xliff:g> ישמש לשירותי נתונים. אתה בטוח שברצונך להמשיך?</string>
+  <string name="sim_enabler_airplane_on">אין אפשרות לבצע את הפעולה כאשר מצב טיסה פעיל.</string>
   <string name="sim_enabler_in_call">Unable to perform the operation while in call.</string>
   <string name="sim_enabler_both_inactive">Can\'t disable all SIM cards</string>
   <string name="sim_enabler_enabling">Activating\u2026</string>

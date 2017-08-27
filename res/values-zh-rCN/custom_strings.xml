@@ -20,12 +20,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- sRGB -->
-  <string name="srgb_title">sRGB mode</string>
-  <string name="srgb_summary">Enable sRGB display calibration</string>
+  <string name="srgb_title">sRGB 模式</string>
+  <string name="srgb_summary">启用 sRGB 显示器校准</string>
   <!-- Strings for Dialog ok button -->
-  <string name="ok">OK</string>
+  <string name="ok">确定</string>
   <!-- Menu label for reset the battery stats -->
-  <string name="menu_stats_reset">Reset stats</string>
+  <string name="menu_stats_reset">重置统计数据</string>
   <!-- Reset stats confirmation dialog's message -->
   <string name="reset_stats_msg">Battery history stats are going to be reset</string>
   <!-- Linked / unlinked notification volume -->

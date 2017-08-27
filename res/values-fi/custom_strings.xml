@@ -20,115 +20,115 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- sRGB -->
-  <string name="srgb_title">sRGB mode</string>
-  <string name="srgb_summary">Enable sRGB display calibration</string>
+  <string name="srgb_title">sRGB-tila</string>
+  <string name="srgb_summary">Laita päälle sRGB näytön kalibrointi</string>
   <!-- Strings for Dialog ok button -->
   <string name="ok">OK</string>
   <!-- Menu label for reset the battery stats -->
-  <string name="menu_stats_reset">Reset stats</string>
+  <string name="menu_stats_reset">Nollaa tilastot</string>
   <!-- Reset stats confirmation dialog's message -->
-  <string name="reset_stats_msg">Battery history stats are going to be reset</string>
+  <string name="reset_stats_msg">Akun historiatilastot nollataan</string>
   <!-- Linked / unlinked notification volume -->
-  <string name="link_volume_option_title">Link ring and notification volume</string>
-  <string name="notification_volume_option_title">Notification volume</string>
-  <string name="ring_notification_volume_option_title">Ring and notification volume</string>
+  <string name="link_volume_option_title">Yhdistä puheluiden ja ilmoitusten soittoäänen voimakkuus</string>
+  <string name="notification_volume_option_title">Ilmoitusten äänenvoimakkuus</string>
+  <string name="ring_notification_volume_option_title">Puheluiden ja ilmoitusten äänenvoimakkuus</string>
   <!--VertexOS Version-->
-  <string name="vertex_version">VertexOS version</string>
+  <string name="vertex_version">VertexOS versio</string>
   <string name="vertex_version_summary">%s</string>
   <!-- About phone screen, device maintainer name -->
-  <string name="device_maintainer">Device maintainer</string>
+  <string name="device_maintainer">Laitteen ylläpitäjä</string>
   <string name="device_maintainer_summary">%s</string>
   <!-- Status bar - Battery -->
-  <string name="battery_style_title">Battery status style</string>
-  <string name="battery_style_icon">Icon</string>
-  <string name="battery_style_circle">Circle</string>
-  <string name="battery_style_solid">Solid</string>
-  <string name="battery_style_text">Text</string>
-  <string name="battery_style_hidden">Hidden</string>
+  <string name="battery_style_title">Akkukuvakkeen tyyli</string>
+  <string name="battery_style_icon">Kuvake</string>
+  <string name="battery_style_circle">Ympyrä</string>
+  <string name="battery_style_solid">Kiinteä</string>
+  <string name="battery_style_text">Teksti</string>
+  <string name="battery_style_hidden">Piilotettu</string>
   <!-- Status bar - Battery percentage -->
-  <string name="battery_percentage_title">Battery percentage</string>
-  <string name="battery_percentage_default">Hidden (default)</string>
-  <string name="battery_percentage_text_inside">Inside the icon</string>
-  <string name="battery_percentage_text_next">Next to the icon</string>
+  <string name="battery_percentage_title">Akun prosentti</string>
+  <string name="battery_percentage_default">Piilotettu (oletus)</string>
+  <string name="battery_percentage_text_inside">Kuvakkeen sisällä</string>
+  <string name="battery_percentage_text_next">Kuvakkeen vieressä</string>
   <!-- Long press to skip music -->
-  <string name="volbtn_music_controls_title">Playback control</string>
-  <string name="volbtn_music_controls_summary">When the screen is off, long pressing the volume keys will seek music tracks</string>
+  <string name="volbtn_music_controls_title">Soittimen ohjaus</string>
+  <string name="volbtn_music_controls_summary">Kappale vaihtuu painamalla äänenvoimakkuuspainikkeita pitkään näytön ollessa suljettuna</string>
   <!-- Changelog -->
-  <string name="changelog_custom_title">Changelog</string>
-  <string name="changelog_custom_error">Unable to load changelog</string>
-  <string name="buttons_pref_title">Buttons</string>
-  <string name="buttons_pref_summary">Customize your device keys and buttons</string>
-  <string name="enable_navigation_bar_title">Enable software keys</string>
-  <string name="enable_navigation_bar_summary">Enable on-screen navigation keys</string>
-  <string name="swap_navigation_keys_title">Swap keys</string>
-  <string name="swap_navigation_keys_summary">Swap back and recents keys</string>
-  <string name="swap_slider_order_title">Swap slider</string>
-  <string name="swap_slider_order_summary">Swap the alert slider modes order</string>
-  <string name="hardware_brightness_keys_title">Backlight</string>
-  <string name="hardware_brightness_keys_summary">Enable navigation keys backlight</string>
-  <string name="home_key_title">Home button</string>
-  <string name="back_key_title">Back button</string>
-  <string name="menu_key_title">Menu button</string>
-  <string name="assist_key_title">Assist button</string>
-  <string name="app_switch_key_title">Recents button</string>
-  <string name="camera_key_title">Camera button</string>
-  <string name="short_press_title">Short press action</string>
-  <string name="long_press_title">Long press action</string>
-  <string name="double_tap_title">Double tap action</string>
-  <string name="action_nothing">No action</string>
-  <string name="action_menu">Open/close menu</string>
-  <string name="action_app_switch">Recents</string>
-  <string name="action_search">Search assistant</string>
-  <string name="action_voice_search">Voice search</string>
-  <string name="action_in_app_search">In-app search</string>
-  <string name="action_launch_camera">Open camera</string>
-  <string name="action_last_app">Launch last app</string>
-  <string name="action_splitscreen">Splitscreen</string>
-  <string name="action_kill_app">Kill app</string>
-  <string name="action_screen_off">Turn off screen</string>
-  <string name="power_key_title">Power button</string>
+  <string name="changelog_custom_title">Muutosloki</string>
+  <string name="changelog_custom_error">Muutoslokin lataaminen epäonnistui</string>
+  <string name="buttons_pref_title">Painikkeet</string>
+  <string name="buttons_pref_summary">Muokkaa laitteesi näppäimiä ja painikkeita</string>
+  <string name="enable_navigation_bar_title">Ota softa-painikkeet käyttöön</string>
+  <string name="enable_navigation_bar_summary">Ota näytön navigointipainikkeet käyttöön</string>
+  <string name="swap_navigation_keys_title">Vaihda painikkeita</string>
+  <string name="swap_navigation_keys_summary">Vaihda takaisin- ja viimeisimmät-painikkeiden paikkaa</string>
+  <string name="swap_slider_order_title">Vaihda liukusäätimen järjestys</string>
+  <string name="swap_slider_order_summary">Vaihda hälytysten liukusäätimen tilojen järjestys</string>
+  <string name="hardware_brightness_keys_title">Taustavalo</string>
+  <string name="hardware_brightness_keys_summary">Laita navigointipainikkeiden taustavalo päälle</string>
+  <string name="home_key_title">Koti-näppäin</string>
+  <string name="back_key_title">Takaisin-näppäin</string>
+  <string name="menu_key_title">Valikko-näppäin</string>
+  <string name="assist_key_title">Avustus-näppäin</string>
+  <string name="app_switch_key_title">Viimeisimmät-näppäin</string>
+  <string name="camera_key_title">Kamera-näppäin</string>
+  <string name="short_press_title">Lyhyen painalluksen toiminto</string>
+  <string name="long_press_title">Pitkän painalluksen toiminto</string>
+  <string name="double_tap_title">Kaksoisnapautuksen toiminto</string>
+  <string name="action_nothing">Ei toimintoa</string>
+  <string name="action_menu">Avaa/sulje valikko</string>
+  <string name="action_app_switch">Viimeisimmät</string>
+  <string name="action_search">Hakuassistentti</string>
+  <string name="action_voice_search">Puhehaku</string>
+  <string name="action_in_app_search">Haku sovelluksessa</string>
+  <string name="action_launch_camera">Avaa kamera</string>
+  <string name="action_last_app">Käynnistä viimeisin sovellus</string>
+  <string name="action_splitscreen">Jaettu ruutu</string>
+  <string name="action_kill_app">Tapa sovellus</string>
+  <string name="action_screen_off">Näyttö pois päältä</string>
+  <string name="power_key_title">Virtapainike</string>
   <!-- Sim Toggle -->
   <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-  <string name="sim_enabled">enabled</string>
-  <string name="sim_disabled">disabled</string>
-  <string name="sim_missing">missing or faulty</string>
-  <string name="sim_enabler_need_disable_sim">SIM card will be deactivated. Do you want to continue?</string>
-  <string name="sim_enabler_will_disable_sim_title">Attention</string>
-  <string name="sim_enabler_need_switch_data_service">This SIM will be disabled and SIM <xliff:g id="slotid">%1$s</xliff:g> will be used for data services. Are you sure you want to continue?</string>
-  <string name="sim_enabler_airplane_on">Unable to perform the operation while airplane mode is on.</string>
-  <string name="sim_enabler_in_call">Unable to perform the operation while in call.</string>
-  <string name="sim_enabler_both_inactive">Can\'t disable all SIM cards</string>
-  <string name="sim_enabler_enabling">Activating\u2026</string>
-  <string name="sim_enabler_disabling">Deactivating\u2026</string>
-  <string name="sub_activate_success">SIM activated.</string>
-  <string name="sub_activate_failed">Activation failed.</string>
-  <string name="sub_deactivate_success">SIM deactivated.</string>
-  <string name="sub_deactivate_failed">Deactivation failed.</string>
+  <string name="sim_enabled">käytössä</string>
+  <string name="sim_disabled">ei käytössä</string>
+  <string name="sim_missing">puuttuu tai on viallinen</string>
+  <string name="sim_enabler_need_disable_sim">SIM-kortti deaktivoidaan. Haluatko jatkaa?</string>
+  <string name="sim_enabler_will_disable_sim_title">Huomio</string>
+  <string name="sim_enabler_need_switch_data_service">Tämä SIM-kortti poistetaan käytöstä ja SIM <xliff:g id="slotid">%1$s</xliff:g>:n datapalvelut otetaan käyttöön. Haluatko varmasti jatkaa?</string>
+  <string name="sim_enabler_airplane_on">Toimintoa ei voida suorittaa, kun lentotila on päällä.</string>
+  <string name="sim_enabler_in_call">Toimintoa ei voida suorittaa puhelun aikana.</string>
+  <string name="sim_enabler_both_inactive">Kaikkia SIM-kortteja ei voi poistaa käytöstä</string>
+  <string name="sim_enabler_enabling">Aktivoidaan\u2026</string>
+  <string name="sim_enabler_disabling">Deaktivoidaan\u2026</string>
+  <string name="sub_activate_success">SIM aktivoitu.</string>
+  <string name="sub_activate_failed">Aktivointi epäonnistui.</string>
+  <string name="sub_deactivate_success">SIM deaktivoitu.</string>
+  <string name="sub_deactivate_failed">Deaktivointi epäonnistui.</string>
   <!-- Preference category for LAN development settings. [CHAR LIMIT=25] -->
-  <string name="debug_LAN_category">LAN settings</string>
+  <string name="debug_LAN_category">LAN-asetukset</string>
   <!-- Hostname setting -->
-  <string name="device_hostname">Device hostname</string>
+  <string name="device_hostname">Laitteen isäntänimi</string>
   <!-- AOSP-CAF Version -->
-  <string name="version_title">CAF Version</string>
-  <string name="version_default">Unknown</string>
+  <string name="version_title">CAF-versio</string>
+  <string name="version_default">Tuntematon</string>
   <!-- Advanced reboot options -->
-  <string name="advanced_reboot_title">Advanced reboot</string>
-  <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery or bootloader</string>
+  <string name="advanced_reboot_title">Edistynyt uudelleenkäynnistys</string>
+  <string name="advanced_reboot_summary">Kun tämä on käytössä, käynnistysvalikossa on vaihtoehdot Recovery- ja Bootloader-tilaan käynnistämiseen</string>
   <!-- Sim Enabler -->
   <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-  <string name="sim_enabled">enabled</string>
-  <string name="sim_disabled">disabled</string>
-  <string name="sim_missing">missing or faulty</string>
-  <string name="sim_enabler_need_disable_sim">SIM card will be deactivated. Do you want to continue?</string>
-  <string name="sim_enabler_will_disable_sim_title">Attention</string>
-  <string name="sim_enabler_need_switch_data_service">This SIM will be disabled and SIM <xliff:g id="slotid">%1$s</xliff:g> will be used for data services. Are you sure you want to continue?</string>
-  <string name="sim_enabler_airplane_on">Unable to perform the operation while airplane mode is on.</string>
-  <string name="sim_enabler_in_call">Unable to perform the operation while in call.</string>
-  <string name="sim_enabler_both_inactive">Can\'t disable all SIM cards</string>
-  <string name="sim_enabler_enabling">Activating\u2026</string>
-  <string name="sim_enabler_disabling">Deactivating\u2026</string>
-  <string name="sub_activate_success">SIM activated.</string>
-  <string name="sub_activate_failed">Activation failed.</string>
-  <string name="sub_deactivate_success">SIM deactivated.</string>
-  <string name="sub_deactivate_failed">Deactivation failed.</string>
+  <string name="sim_enabled">käytössä</string>
+  <string name="sim_disabled">ei käytössä</string>
+  <string name="sim_missing">puuttuu tai on viallinen</string>
+  <string name="sim_enabler_need_disable_sim">SIM-kortti deaktivoidaan. Haluatko jatkaa?</string>
+  <string name="sim_enabler_will_disable_sim_title">Huomio</string>
+  <string name="sim_enabler_need_switch_data_service">Tämä SIM-kortti poistetaan käytöstä ja SIM <xliff:g id="slotid">%1$s</xliff:g>:n datapalvelut otetaan käyttöön. Haluatko varmasti jatkaa?</string>
+  <string name="sim_enabler_airplane_on">Toimintoa ei voida suorittaa, kun lentotila on päällä.</string>
+  <string name="sim_enabler_in_call">Toimintoa ei voida suorittaa puhelun aikana.</string>
+  <string name="sim_enabler_both_inactive">Kaikkia SIM-kortteja ei voi poistaa käytöstä</string>
+  <string name="sim_enabler_enabling">Aktivoidaan\u2026</string>
+  <string name="sim_enabler_disabling">Deaktivoidaan\u2026</string>
+  <string name="sub_activate_success">SIM aktivoitu.</string>
+  <string name="sub_activate_failed">Aktivointi epäonnistui.</string>
+  <string name="sub_deactivate_success">SIM deaktivoitu.</string>
+  <string name="sub_deactivate_failed">Deaktivointi epäonnistui.</string>
 </resources>
